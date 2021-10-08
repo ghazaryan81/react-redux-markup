@@ -1,0 +1,55 @@
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin start-placeholder-animate-to-right($ms) {
+  text-indent: 0;
+  opacity: 1;
+  @include transition(text-indent, opacity);
+}
+
+@mixin end-placeholder-animate-to-right($delta) {
+  text-indent: $delta;
+  opacity: 0;
+}
+
+@mixin placeholder-animate-to-right($delta: 20px, $ms: 0.25s) {
+  &::-webkit-input-placeholder {
+    @include start-placeholder-animate-to-right($ms);
+  }
+  &::-moz-placeholder {
+    @include start-placeholder-animate-to-right($ms);
+  }
+  &:-moz-placeholder {
+    @include start-placeholder-animate-to-right($ms);
+  }
+  &:-ms-input-placeholder {
+    @include start-placeholder-animate-to-right($ms);
+  }
+  &:focus::-webkit-input-placeholder {
+    @include end-placeholder-animate-to-right($delta);
+  }
+  &:focus::-moz-placeholder {
+    @include end-placeholder-animate-to-right($delta);
+  }
+  &:focus:-moz-placeholder {
+    @include end-placeholder-animate-to-right($delta);
+  }
+  &:focus:-ms-input-placeholder {
+    @include end-placeholder-animate-to-right($delta);
+  }
+}

@@ -1,0 +1,10 @@
+@mixin font-normal() {
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

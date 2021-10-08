@@ -1,0 +1,39 @@
+@mixin gradient-1($ang: "180deg") {
+ background: linear-gradient(
+  #{$ang},
+  rgba($brand-1-1, 1) 0%,
+  rgba($brand-1-2, 1) 100%
+ );
+} // @mixin gradient-1
+
+@mixin gradient-2($ang: "180deg") {
+ background: linear-gradient(
+  #{$ang},
+  rgba($brand-4-1, 1) 0%,
+  rgba($brand-4-2, 1) 100%
+ );
+} // @mixin gradient-2
+
+@mixin gradient-3($ang: "180deg") {
+ background: linear-gradient(
+  #{$ang},
+  rgba($brand-3-4, 1) 0%,
+  rgba($brand-3-5, 1) 100%
+ );
+} // @mixin gradient-3
+
+@mixin gradient-4($ang: "180deg") {
+ background: linear-gradient(
+  #{$ang},
+  rgba($brand-6-2, 1) 0%,
+  rgba($brand-6-3, 1) 100%
+ );
+} // @mixin gradient-4
+
+@mixin gradient-5($ang: "180deg") {
+ background: linear-gradient(
+  #{$ang},
+  rgba($brand-7-2, 1) 0%,
+  rgba($brand-7-3, 1) 100%
+ );
+} // @mixin gradient-5

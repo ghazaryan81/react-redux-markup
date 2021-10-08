@@ -1,0 +1,95 @@
+@import "common/mixins";
+@import "common/variables";
+// @import "common/smooth-scrollbar";
+// @import "common/fonts";
+@import "common/grid-home";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../../node_modules/sass-rem/rem";
+@import "common/base";
+
+:root {
+ @each $key1, $level1 in $vars {
+  @if $key1 != "brand-color" {
+   @each $key2, $level2 in $level1 {
+    --#{$key1}--#{$key2}: #{$level2};
+   }
+  } @else if $key1 == "brand-color" {
+   @each $key2, $level2 in $level1 {
+    --#{$key1}--#{$key2}: #{$level2};
+    --#{$key1}--#{$key2}-rgb: #{torgb($level2)};
+   }
+  }
+ }
+
+ @each $key1, $level1 in $component-vars {
+  @each $key2, $level2 in $level1 {
+   --#{$key1}--#{$key2}: #{$level2};
+  }
+ }
+}
+
+@mixin gradient-1($deg: 180) {
+ background: linear-gradient(
+  #{$deg}deg,
+  rgba(var(--brand-color--2-1-rgb), 1) 0%,
+  rgba(var(--brand-color--1-1-rgb), 1) 100%
+ );
+}
+
+@mixin gradient-2($deg: 180) {
+ background: linear-gradient(
+  #{$deg}deg,
+  rgba(var(--brand-color--2-1-rgb), 0.5) 0%,
+  rgba(var(--brand-color--1-1-rgb), 0.5) 100%
+ );
+}
+
+@mixin gradient-3 {
+ background: linear-gradient(
+  to right,
+  rgba(var(--brand-color--1-8-rgb), 1),
+  rgba(var(--brand-color--1-5-rgb), 1)
+ );
+}
+
+@mixin gradient-4($deg: 180) {
+ background: linear-gradient(
+  #{$deg}deg,
+  rgba(var(--brand-color--2-1-rgb), 0.4) -40%,
+  rgba(var(--brand-color--1-1-rgb), 1) 100%
+ );
+}
+
+@mixin gradient-5($deg: 180) {
+ background: linear-gradient(
+  #{$deg}deg,
+  rgba(#fafbff, 1) 0%,
+  rgba(#f7f9ff, 1) 100%
+ );
+}
+
+@mixin gradient-6($deg: 180) {
+ background: linear-gradient(
+  #{$deg}deg,
+  rgba(#d1d2fd, 1) 0%,
+  rgba(#b2c0ff, 1) 100%
+ );
+}
+
+@mixin box-shadow-1 {
+ box-shadow: 4px 4px 8px rgba(var(--brand-color--1-2-rgb), 1);
+}
+
+@mixin box-shadow-2 {
+ box-shadow: 4px 4px 8px rgba(var(--brand-color--1-2-rgb), 0.3);
+}
+
+@mixin box-shadow-3 {
+ box-shadow: 4px 4px 8px rgba(var(--brand-color--1-2-rgb), 0.5),
+  -4px -4px 8px rgba(var(--brand-color--2-1-rgb), 0.7);
+}
+
+@mixin box-shadow-4 {
+ box-shadow: 4px 4px 8px rgba(var(--brand-color--1-2-rgb), 0.7),
+  -4px -4px 8px rgba(var(--brand-color--2-1-rgb), 0.7);
+}

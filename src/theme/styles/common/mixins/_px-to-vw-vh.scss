@@ -1,0 +1,15 @@
+@function px-to-vw($px) {
+ @return (100 * strip-unit($px) / 1920) * 1vw;
+}
+
+@function get-vw($max-breakpoint, $target) {
+ $vw-context: ($max-breakpoint * 0.01) * 1px;
+ @return ($target/$vw-context) * 1vw;
+}
+
+@mixin vw($max-breakpoint, $size) {
+ font-size: get-vw($size);
+ @media (min-width: #{$max-breakpoint}px) {
+  font-size: $size;
+ }
+}

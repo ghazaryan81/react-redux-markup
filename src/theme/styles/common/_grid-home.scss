@@ -1,0 +1,60 @@
+$grid-breakpoints: (
+ xs: 0,
+ sm: 520px,
+ md: 790px,
+ lg: 1064px,
+ xl: 1320px,
+) !default;
+
+$container-max-widths: (
+ sm: 480px,
+ md: 768px,
+ lg: 1024px,
+ xl: 1280px,
+) !default;
+
+$grid-gutter-width: 32px;
+
+// bp - brackpoint
+$xl-bp: map-get($grid-breakpoints, "xl") - 1;
+$lg-bp: map-get($grid-breakpoints, "lg") - 1;
+$md-bp: map-get($grid-breakpoints, "md") - 1;
+$xs-bp: map-get($grid-breakpoints, "xs") - 1;
+$sm-bp: map-get($grid-breakpoints, "sm") - 1;
+
+// cw - content width
+$xl-cw: map-get($container-max-widths, "xl");
+$lg-cw: map-get($container-max-widths, "lg");
+$md-cw: map-get($container-max-widths, "md");
+$xs-cw: map-get($container-max-widths, "xs");
+$sm-cw: map-get($container-max-widths, "sm");
+
+@mixin xl {
+ @media screen and (max-width: $xl-bp) {
+  @content;
+ }
+}
+
+@mixin lg {
+ @media screen and (max-width: $lg-bp) {
+  @content;
+ }
+}
+
+@mixin md {
+ @media screen and (max-width: $md-bp) {
+  @content;
+ }
+}
+
+@mixin sm {
+ @media screen and (max-width: $sm-bp) {
+  @content;
+ }
+}
+
+@mixin xs {
+ @media screen and (max-width: $xs-bp) {
+  @content;
+ }
+}

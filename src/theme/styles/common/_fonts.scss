@@ -1,0 +1,49 @@
+// poppins-regular, poppins-medium, poppins-semibold, poppins-bold
+$font-path: "../../fonts/all/";
+$font-family: Poppins;
+$font-weight: 400 500 600 700;
+$font-file-names: poppins-regular, poppins-medium, poppins-semibold,
+ poppins-bold;
+@each $font-file-name in $font-file-names {
+ $src: $font-path + $font-file-name;
+ $i: index($font-file-names, $font-file-name);
+ // csscomb:ignore:start
+ /* prettier-ignore */
+ @font-face {
+    font-family: $font-family;
+    font-weight: nth($font-weight, $i);
+    src: url($src + '.eot');
+    src: url($src + '.eot') format('embedded-opentype'),
+    url($src + '.woff2') format('woff2'),
+    url($src + '.woff') format('woff'),
+    url($src + '.ttf') format('truetype'),
+    url($src + '.otf') format('opentype'),
+    url($src + '.svg') format('svg');
+  }
+ // csscomb:ignore:end
+}
+
+// raleway-regular, raleway-medium, raleway-semibold, raleway-bold, raleway-extra-bold
+$font-path: "../../fonts/all/";
+$font-family: "Raleway";
+$font-weight: 400 500 600 700 800;
+$font-file-names: raleway-regular, raleway-medium, raleway-semibold,
+ raleway-bold, raleway-extra-bold;
+@each $font-file-name in $font-file-names {
+ $src: $font-path + $font-file-name;
+ $i: index($font-file-names, $font-file-name);
+ // csscomb:ignore:start
+ /* prettier-ignore */
+ @font-face {
+    font-family: $font-family;
+    font-weight: nth($font-weight, $i);
+    src: url($src + '.eot');
+    src: url($src + '.eot') format('embedded-opentype'),
+    url($src + '.woff2') format('woff2'),
+    url($src + '.woff') format('woff'),
+    url($src + '.ttf') format('truetype'),
+    url($src + '.otf') format('opentype'),
+    url($src + '.svg') format('svg');
+  }
+ // csscomb:ignore:end
+}

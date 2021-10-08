@@ -1,0 +1,84 @@
+{
+ "results": [
+  {
+   "id": 0,
+   "label": "Blush",
+   "hrefTo": "blush",
+   "icon": "blush",
+   "count": 60,
+   "viewBox": "0 0 33 32"
+  },
+  {
+   "id": 1,
+   "label": "Bronzer",
+   "hrefTo": "bronzer",
+   "icon": "bronzer",
+   "count": 55,
+   "viewBox": "0 0 33 32"
+  },
+  {
+   "id": 2,
+   "label": "Eyebrow",
+   "hrefTo": "eyebrow",
+   "icon": "eyebrow",
+   "count": 44,
+   "viewBox": "0 0 50 32"
+  },
+  {
+   "id": 3,
+   "label": "Eyeliner",
+   "hrefTo": "eyeliner",
+   "icon": "eyeliner",
+   "count": 38,
+   "viewBox": "0 0 22 32"
+  },
+  {
+   "id": 4,
+   "label": "Eyeshadow",
+   "hrefTo": "Eyeshadow",
+   "icon": "eyeshadow",
+   "count": 98,
+   "viewBox": "0 0 22 32"
+  },
+  {
+   "id": 5,
+   "label": "Foundation",
+   "hrefTo": "foundation",
+   "icon": "foundation",
+   "count": 98,
+   "viewBox": "0 0 23 32"
+  },
+  {
+   "id": 6,
+   "label": "Lip liner",
+   "hrefTo": "lip-liner",
+   "icon": "lip-liner",
+   "count": 99,
+   "viewBox": "0 0 52 32"
+  },
+  {
+   "id": 7,
+   "label": "Lipstick",
+   "hrefTo": "lipstick",
+   "icon": "lipstick",
+   "count": 101,
+   "viewBox": "0 0 9 32"
+  },
+  {
+   "id": 8,
+   "label": "Mascara",
+   "hrefTo": "mascara",
+   "icon": "mascara",
+   "count": 110,
+   "viewBox": "0 0 15 32"
+  },
+  {
+   "id": 9,
+   "label": "Nail polish",
+   "hrefTo": "nail-polish",
+   "icon": "nail-polish",
+   "count": 118,
+   "viewBox": "0 0 16 32"
+  }
+ ]
+}

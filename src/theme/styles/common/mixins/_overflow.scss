@@ -1,0 +1,4 @@
+@mixin overflow($x, $y:$x) {
+  overflow-x: $x;
+  overflow-y: $y;
+}

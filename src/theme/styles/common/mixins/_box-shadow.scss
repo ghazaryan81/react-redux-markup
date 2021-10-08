@@ -1,0 +1,34 @@
+@mixin box-shadow($opacity) {
+ // (inset || outset - default) | offset-x | offset-y | blur-radius | spread-radius | color
+ -webkit-box-shadow: 1px 3px 23px -5px rgba(0, 0, 0, $opacity);
+ -moz-box-shadow: 1px 3px 23px -5px rgba(0, 0, 0, $opacity);
+ box-shadow: 1px 3px 23px -5px rgba(0, 0, 0, $opacity);
+}
+
+@mixin shadow-1 {
+ box-shadow: 0 4px 15px 3px rgba($brand-1-3, 0.24);
+} // @mixin shadow-1
+
+@mixin shadow-2 {
+ box-shadow: 0 4px 15px 3px rgba($brand-4-2, 0.24);
+} // @mixin shadow-2
+
+@mixin shadow-3 {
+ box-shadow: 0 4px 15px 3px rgba($brand-3-5, 0.24);
+} // @mixin shadow-3
+
+@mixin shadow-4 {
+ box-shadow: -1px 0 26px -7px rgba($brand-1-5, 0.12);
+} // @mixin shadow-4
+
+@mixin shadow-5 {
+ box-shadow: -1px 0 26px -7px rgba($brand-1-5, 0.27);
+} // @mixin shadow-5
+
+@mixin shadow-6 {
+ box-shadow: -1px 0 26px -7px rgba($brand-6-3, 0.27);
+} // @mixin shadow-5
+
+@mixin shadow-7 {
+ box-shadow: -1px 0 26px -7px rgba($brand-7-3, 0.27);
+} // @mixin shadow-5

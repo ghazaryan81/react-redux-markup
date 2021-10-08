@@ -1,0 +1,39 @@
+{
+	"random": 46,
+	"random float": 62.481,
+	"bool": true,
+	"date": "1994-02-28",
+	"regEx": "hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo world",
+	"enum": "online",
+	"firstname": "Robinia",
+	"lastname": "Lea",
+	"city": "New Delhi",
+	"country": "Dominican Republic",
+	"countryCode": "GI",
+	"email uses current data": "Robinia.Lea@gmail.com",
+	"email from expression": "Robinia.Lea@yopmail.com",
+	"array": [
+		"Audrie",
+		"Vevay",
+		"Gabriellia",
+		"June",
+		"Bobinette"
+	],
+	"array of objects": [
+		{
+			"index": 0,
+			"index start at 5": 5
+		},
+		{
+			"index": 1,
+			"index start at 5": 6
+		},
+		{
+			"index": 2,
+			"index start at 5": 7
+		}
+	],
+	"Lenna": {
+		"age": 36
+	}
+}

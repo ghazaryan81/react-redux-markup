@@ -1,0 +1,57 @@
+@mixin margin-x($left, $right: $left) {
+  margin: {
+    left: $left;
+    right: $right;
+  }
+}
+
+@mixin margin-y($top, $bottom: $top) {
+  margin: {
+    top: $top;
+    bottom: $bottom;
+  }
+}
+
+@mixin margin-bl($bottom, $left) {
+  margin: {
+    bottom: $bottom;
+    left: $left;
+  }
+}
+
+@mixin margin-tl($top, $left) {
+  margin: {
+    top: $top;
+    left: $left;
+  }
+}
+
+@mixin margin-rb($right, $bottom) {
+  margin: {
+    right: $right;
+    bottom: $bottom;
+  }
+}
+
+@mixin margin-tr($top, $right) {
+  margin: {
+    top: $top;
+    right: $right;
+  }
+}
+
+@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+  margin: {
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+  }
+}
+
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}

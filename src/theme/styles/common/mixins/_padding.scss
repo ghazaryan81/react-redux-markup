@@ -1,0 +1,50 @@
+@mixin padding-x($left, $right: $left) {
+  padding: {
+    left: $left;
+    right: $right;
+  }
+}
+
+@mixin padding-y($top, $bottom: $top) {
+  padding: {
+    top: $top;
+    bottom: $bottom;
+  }
+}
+
+@mixin padding-tr($top, $right) {
+  padding: {
+    top: $top;
+    right: $right;
+  }
+}
+
+@mixin padding-tl($top, $left) {
+  padding: {
+    top: $top;
+    left: $left;
+  }
+}
+
+@mixin padding-lb($left, $bottom) {
+  padding: {
+    left: $left;
+    bottom: $bottom;
+  }
+}
+
+@mixin padding-rb($right, $bottom) {
+  padding: {
+    right: $right;
+    bottom: $bottom;
+  }
+}
+
+@mixin padding ($top: null, $right: null, $bottom: null, $left: null) {
+  padding: {
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+  }
+}

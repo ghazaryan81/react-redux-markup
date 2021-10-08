@@ -1,0 +1,26 @@
+// csscomb:ignore:start
+/* prettier-ignore */
+.media {
+ background: rgba(green, 0.5);
+ @include p;
+ @include size(100%, 30px);
+ &:after {
+  font-size: 20px;
+  content: 'break: null; container-width: xl (1170px)';
+  @include flex-center;
+  @include size(100%);
+  @include xl {
+   content: 'break: xl (if w < #{map-get($grid-breakpoints, 'xl')}); container-width: lg (#{map-get($container-max-widths, 'lg')})';
+  } // .media:after @include xl
+  @include lg {
+   content: 'break: lg (if w < #{map-get($grid-breakpoints, 'lg')}); container-width: md (#{map-get($container-max-widths, 'md')})';
+  } // .media:after @include lg
+  @include md {
+   content: 'break: md (if w < #{map-get($grid-breakpoints, 'md')}); container-width: sm (#{map-get($container-max-widths, 'sm')})';
+  } // .media:after @include md
+  @include sm {
+   content: 'break: sm (if w < #{map-get($grid-breakpoints, 'sm')}); container-width: xs (100%)';
+  } // .media:after @include sm
+ } // .media:after
+} // .media
+// csscomb:ignore:end

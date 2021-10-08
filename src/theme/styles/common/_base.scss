@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+} // *::after
+
+a {
+ background: transparent;
+ outline: none;
+} // a
+
+*,
+*:focus,
+*:active,
+*:hover {
+ outline: none;
+} // *:hover
+
+* {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ font: inherit;
+} // *
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+ display: block;
+} // summary
+
+audio,
+canvas,
+progress,
+video {
+ display: inline-block;
+ vertical-align: baseline;
+} // video
+
+audio:not([controls]) {
+ display: none;
+} // audio:not([controls])
+
+[hidden],
+template {
+ display: none;
+} // template
+
+html {
+ text-size-adjust: 100%;
+ cursor: default;
+
+ -webkit-focus-ring-color: rgba(182, 132, 132, 0);
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+} // html
+
+body {
+ font-size: 100%;
+ line-height: 1;
+
+ -moz-osx-font-smoothing: grayscale;
+} // body
+
+a {
+ background: transparent;
+} // a
+
+*:focus,
+*:active,
+*:hover {
+ outline: none;
+} // *:hover
+
+hr {
+ box-sizing: content-box;
+} // hr
+
+ol,
+ul {
+ list-style: none;
+} // ul
+
+pre {
+ white-space: pre-wrap;
+ tab-size: 4;
+} // pre
+
+q {
+ quotes: "\201C""\201D""\2018""\2019";
+} // q
+
+img {
+ border: none;
+} // img
+
+button,
+input {
+ line-height: normal;
+} // input
+
+button,
+select {
+ text-transform: none;
+} // select
+
+button {
+ overflow: visible;
+} // button
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+ cursor: pointer;
+ appearance: button;
+} // input[type="submit"]
+
+button[disabled],
+html input[disabled] {
+ cursor: default;
+} // html input[disabled]
+
+input[type="checkbox"],
+input[type="radio"] {
+ box-sizing: border-box;
+} // input[type="radio"]
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+ height: auto;
+} // input[type="number"]::-webkit-outer-spin-button
+
+input[type="search"] {
+ box-sizing: content-box;
+ appearance: textfield;
+} // input[type="search"]
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+ appearance: none;
+} // input[type="search"]::-webkit-search-decoration
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+ padding: 0;
+ border: none;
+} // input::-moz-focus-inner
+
+input,
+select,
+textarea {
+ border-radius: 0;
+ box-shadow: none;
+} // textarea
+
+textarea {
+ overflow: auto;
+ vertical-align: top;
+ resize: none;
+} // textarea
+
+input,
+textarea {
+ user-select: text;
+} // textarea
+
+table {
+ border-spacing: 0;
+ border-collapse: collapse;
+} // table
+
+a,
+input,
+textarea,
+button,
+select,
+option {
+ font-family: inherit;
+} // option
+
+button:not([disabled]),
+a[role="button"]:not([disabled]) {
+ cursor: pointer;
+} // a[role="button"]:not([disabled])
+
+body,
+html {
+ text-size-adjust: 100%;
+ text-rendering: optimizeLegibility;
+
+ -webkit-font-smoothing: antialiased;
+ text-decoration-skip: objects;
+ -webkit-tap-highlight-color: transparent;
+ scroll-behavior: smooth;
+} // html
+
+.select-disable {
+ user-select: none;
+ -webkit-touch-callout: none;
+} // .select-disable

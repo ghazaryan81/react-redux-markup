@@ -1,0 +1,6 @@
+@mixin align-xy($justifyContent, $alignItems: null, $align: null) {
+ display: flex;
+ justify-content: $justifyContent;
+ align-items: $alignItems;
+ text-align: $align;
+}

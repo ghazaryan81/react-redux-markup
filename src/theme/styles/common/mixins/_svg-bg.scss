@@ -1,0 +1,3 @@
+@mixin svg-bg($path, $color: '117, 59, 38, 1', $viewBox: 0 0 32 32, $width: null, $height: null, $rotation: 0) {
+ background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="' + $width + '" height="' + $height + '" viewBox="' + $viewBox + '"><path style="fill:rgba(' + $color + ')" d="' + $path + '" /></svg>');
+}

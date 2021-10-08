@@ -1,0 +1,64 @@
+{
+ "results": [
+  {
+   "id": 0,
+   "label": "Vegan",
+   "hrefTo": "vegan"
+  },
+  {
+   "id": 1,
+   "label": "Gluten free",
+   "hrefTo": "gluten-free"
+  },
+  {
+   "id": 2,
+   "label": "Canadian",
+   "hrefTo": "canadian"
+  },
+  {
+   "id": 3,
+   "label": "Natural",
+   "hrefTo": "natural"
+  },
+  {
+   "id": 4,
+   "label": "Non-gmo",
+   "hrefTo": "non-gmo"
+  },
+  {
+   "id": 5,
+   "label": "Purpicks",
+   "hrefTo": "purpicks"
+  },
+  {
+   "id": 6,
+   "label": "Usda organic",
+   "hrefTo": "usda-organic"
+  },
+  {
+   "id": 7,
+   "label": "Organic",
+   "hrefTo": "organic"
+  },
+  {
+   "id": 8,
+   "label": "Certclean",
+   "hrefTo": "certclean"
+  },
+  {
+   "id": 9,
+   "label": "Ewg verified",
+   "hrefTo": "ewg-verified"
+  },
+  {
+   "id": 10,
+   "label": "Hypoallergenic",
+   "hrefTo": "hypoallergenic"
+  },
+  {
+   "id": 11,
+   "label": "No talc",
+   "hrefTo": "no-talc"
+  }
+ ]
+}
